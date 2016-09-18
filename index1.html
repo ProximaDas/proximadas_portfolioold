@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Proxima DM</title>
+	    <meta name="Description" content=""/>
+        <meta name="author" content="mirsat tekin" />
+        <meta name="designer" content="mirsat tekin" />
+        <meta name="reply-to" content="mirsattekin@gmail.com" />
+        <meta name="copyright" content="(c) 2016 mirsat tekin. (www.mirsattekin.com) Tüm Hakları Saklıdır." />
+        <meta name="robots" content="index, follow" />
+        <!--Verifitication-->
+        <meta name="google-site-verification" content="" />
+        <meta name="alexaVerifyID" content="" />
+        <meta name="yandex-verification" content="" />
+        <meta name="msvalidate.01" content=""/>
+        <!-- / Verifitication-->
+        <link rel="shortcut icon" href="contents/images/icons/favicon.png" />
+        <link rel="canonical" href="http://www.domainname.com" />
+        <!-- css -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+        <link href="contents/css/bootstrap.min.css" rel="stylesheet">
+        <link href="contents/css/hover-min.css" rel="stylesheet">
+        <link href="contents/portfolio/css/cubeportfolio.css" rel="stylesheet" type="text/css" />
+        <link href="contents/portfolio/css/portfolio.min.css" rel="stylesheet" type="text/css" />
+        <link href="contents/css/customize.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+          <!--Menu-->
+          <div class="hidden-xs col-sm-3 col-md-2">
+            <div class="list-group cbp-l-filters-button js-filters-juicy-projects">
+                <a href="index.html" class="cbp-filter-item list-group-item text-center">
+                    <img src="contents/images/abstract_bulb.png" alt="img"/>
+                </a>
+                <a href="about-me.html" class="cbp-singlePage list-group-item text-center hvr-underline-from-center text-uppercase">About Me</a>
+                <!-- <li class="cbp-singlePage list-group-item text-center hvr-underline-from-center text-uppercase"><a href="skills.html" class="cbp-singlePage">Skills</a></li> -->
+                <a href="experience.html" class="cbp-singlePage list-group-item text-center hvr-underline-from-center text-uppercase">Experience</a>
+                <div data-filter="*" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase" onclick="make_visible()"> Projects </div>
+                <div data-filter=".movie" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Contact Me </div>
+                <!-- <div data-filter=".identity" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Identity </div>
+                <div data-filter=".web-design" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Web Design</div>
+                <div data-filter=".graphic" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Graphic</div>
+                <div data-filter=".logos" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Logo</div> -->
+                <!--Contact-->
+                <div class="list-group-item text-center">
+                    <address>
+                        <strong>UC Berkeley School of Information</strong><br>
+                        102 S Hall Rd #4600<br>
+                        Berkeley, CA 94720<br>
+                        <br /><br />
+                        <a href="#map" data-toggle="modal"><i class="glyphicon glyphicon-map-marker"></i></a>
+                    </address>
+                    <address>
+                        <strong>Proxima DasMohapatra</strong><br>
+                        <a href="mailto:#">proxima@berkeley.edu</a>
+                    </address>
+                </div>
+                <!--/Contact-->
+            </div>
+          </div>
+          <!-- /Menu-->
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <!--Mobil Menu-->
+            <div class="visible-xs">
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <div id="BtnMobilMenu" class="navbar-header text-center">
+                      <img data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" src="contents/images/bulb.png" alt="img2"/>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav js-filters-juicy-projects">
+                        <li class="cbp-singlePage list-group-item text-center hvr-underline-from-center text-uppercase"><a href="about-me.html" class="cbp-singlePage">About Me</a></li>
+                        <li class="cbp-singlePage list-group-item text-center hvr-underline-from-center text-uppercase"><a href="skills.html" class="cbp-singlePage">Skills</a></li>
+                        <li class="cbp-singlePage list-group-item text-center hvr-underline-from-center text-uppercase"><a href="experience.html" class="cbp-singlePage">Experience</a></li>
+                        <li data-filter="*" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase" onclick="make_visible()"> Projects </li>
+                        <li data-filter=".movie" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Contact Me </li>
+                        <!-- <li data-filter=".identity" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Identity </li>
+                        <li data-filter=".web-design" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Web Design</li>
+                        <li data-filter=".graphic" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Graphic</li>
+                        <li data-filter=".logos" class="cbp-filter-item list-group-item text-center hvr-underline-from-center text-uppercase"> Logo</li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+            <!-- /Mobil Menu-->
+            <!--portfolio -->
+            <div class="portfolio-content portfolio-1" id="all_projects">
+                <!--portfolio Grid-->
+                <div id="js-grid-juicy-projects" class="cbp">
+                    <!--portfolio 1-->
+                    <div class="cbp-item movie">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/earthquake.jpg" alt="img3"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger text-lowercase" rel="nofollow">more info</a>
+                                        <a href="https://www.youtube.com/watch?v=Vr0U0QcTFII" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="To-Do Dashboard<br>by view video">view video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">Earthquake Data Visualization</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Visualization</div>
+                    </div>
+                    <!--/portfolio 1-->
+                    <!--portfolio 2-->
+                    <div class="cbp-item movie">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/innovation.jpg" alt="img4"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger btn-sm text-lowercase" rel="nofollow">more info</a>
+                                        <a href="http://vimeo.com/14912890" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="To-Do Dashboard<br>by view video">view video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">Innovating Kettle Chips</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Product Management</div>
+                    </div>
+                    <!--/portfolio 2-->
+                    <!--portfolio 3-->
+                    <div class="cbp-item graphic">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/tennis.png" alt="img5"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger btn-sm text-lowercase" rel="nofollow">more info</a>
+                                        <a href="contents/images/portfolios/1200x900/1200X900.png" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">Visualizing Tennis Surfaces</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Visualization</div>
+                    </div>
+                    <!--/portfolio 3-->
+                    <!--portfolio 4-->
+                    <div class="cbp-item identity">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/music.png" alt="img6"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger btn-sm text-lowercase" rel="nofollow">more info</a>
+                                        <a href="contents/images/portfolios/1200x900/1200X900.png" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">What am I listening to?</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Data Analysis</div>
+                    </div>
+                    <!--/portfolio 4-->
+                    <!--portfolio 5-->
+                    <div class="cbp-item web-design">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/darkdata.png" alt="img7"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger btn-sm text-lowercase" rel="nofollow">more info</a>
+                                        <a href="contents/images/portfolios/1200x900/1200X900.png" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">Mining Dark Data</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Natural Language Processing</div>
+                    </div>
+                    <!--/portfolio 5-->
+                    <!--portfolio 6-->
+                    <!-- <div class="cbp-item logos">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/portfolios/300x300/300X300.png" alt="img8"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger btn-sm text-lowercase" rel="nofollow">more info</a>
+                                        <a href="contents/images/portfolios/1200x900/1200X900.png" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">Dashboard</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Logos / Graphic</div>
+                    </div> -->
+                    <!--/portfolio 6-->
+                    <!--portfolio 7-->
+                    <!-- <div class="cbp-item logos">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/portfolios/300x300/300X300.png" alt="img9"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger btn-sm text-lowercase" rel="nofollow">more info</a>
+                                        <a href="contents/images/portfolios/1200x900/1200X900.png" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">Dashboard</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Logos / Graphic</div>
+                    </div> -->
+                    <!--/portfolio 7-->
+                    <!--portfolio 8-->
+                    <!-- <div class="cbp-item web-design">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="contents/images/portfolios/300x300/300X300.png" alt="img10"> </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <a href="project1.html" class="cbp-singlePage btn btn-danger btn-sm text-lowercase" rel="nofollow">more info</a>
+                                        <a href="contents/images/portfolios/1200x900/1200X900.png" class="cbp-lightbox btn btn-danger btn-sm text-lowercase" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center">Dashboard</div>
+                        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center">Web Design / Graphic</div>
+                    </div> -->
+                    <!--/portfolio 8-->
+                </div>
+                <!-- /portfolio Grid-->
+                <!--portfolio loadMore-->
+                <!-- <div id="js-loadMore-juicy-projects" class="cbp-l-loadMore-button">
+                    <a href="loadMorePortfolio.html" class="cbp-l-loadMore-link hvr-underline-from-center text-uppercase" rel="nofollow">
+                        <span class="cbp-l-loadMore-defaultText">load more</span>
+                        <span class="cbp-l-loadMore-loadingText">loading...</span>
+                        <span class="cbp-l-loadMore-noMoreLoading">not load more</span>
+                    </a>
+                </div> -->
+                <!-- /portfolio loadMore-->
+            </div>
+            <!-- /portfolio -->
+          </div>
+        </div>
+        <!--footer -->
+        <footer class="footer">
+            <div class="hidden-xs col-sm-3 col-md-2">
+                <small class="footer-small"><kbd>2016 ©</kbd> &nbsp;&nbsp; Proxima DM </small>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-10">
+                <!--Address -->
+                <div class="visible-xs text-center">
+                    <address>
+                        <strong>UC Berkeley School of Information</strong><br>
+                        102 S Hall Rd #4600<br>
+                        Berkeley, CA 94720<br>
+                        <br /><br />
+                            <i aria-hidden="true" data-toggle="modal" data-target="#map" class="glyphicon glyphicon-map-marker"></i>
+                    </address>
+                    <address>
+                        <strong>Proxima DasMohapatra</strong><br>
+                        <a href="mailto:#">proxima@berkeley.edu</a>
+                    </address>
+                </div>
+                <!-- /Address -->
+                <!--Social Media -->
+                    <ul class="social-icons">
+                        <li class="twitter"><a href="#" target="_blank">Twitter</a></li>
+                        <li class="facebook"><a href="#" target="_blank">Facebook</a> </li>
+                        <li class="linkedin"><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                <div class="clearfix"></div>
+                <!-- /Social Media -->
+            </div>
+         </footer>
+         <!-- /footer -->
+          <!-- /.modal Google Map -->
+         <div id="map" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" >
+                        <div class="modal-header bg-default">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h5><strong>UC Berkeley School of Information</strong></h5>
+                             <address>
+                                102 S Hall Rd #4600
+                                Berkeley, CA 94720
+                            </address>
+                        </div>
+                        <div class="modal-body">
+                            <div id="map-canvas" style="width:100%; height:450px">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193730.13844314194!2d-74.01127506960678!3d40.65119385119299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24369470a592b%3A0x4109d18b6c5c7b05!2sQueens%2C+New+York%2C+Birle%C5%9Fik+Devletler!5e0!3m2!1str!2str!4v1469451736133"  height="450"  style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- /.modal Google Map-->
+        <!-- jQuery -->
+         <script src="contents/js/jquery-1.12.4.min.js"></script>
+         <script src="contents/js/bootstrap.min.js"></script>
+         <script src="contents/portfolio/js/jquery.cubeportfolio.js" type="text/javascript"></script>
+         <script src="contents/portfolio/js/portfolio-1.js" type="text/javascript"></script>
+         <!--Make portfolio visible-->
+         <script type="text/javascript">
+            function make_visible() {
+                console.log('here');
+                $('#all_projects').show().children.show();
+                console.log('changed');
+            }
+        </script>
+         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+         <!--[if lt IE 9]>
+           <script src="contents/js/html5shiv.min.js"></script>
+           <script src="contents/js/respond.min.js"></script>
+         <![endif]-->
+         <script src="contents/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
