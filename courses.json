@@ -1,0 +1,37 @@
+{
+	"name":"gradschool",
+	"children": [
+		{
+			"name":"Machine Learning",
+			"children": [
+				{"name": "Data Mining & Analysis", "size":50, "description":"test"},
+				{"name": "Deconstructing Data Science","size":50},
+				{"name": "Data Intenstive International Development","size":50},
+				{"name": "Natural Language Processing","size":50}
+			]
+		},
+		{
+			"name":"Information Visualization",
+			"children": [
+				{"name":"Hacking Measurement","size":50},
+				{"name":"Information Visualization and Presentation","size":50},
+				{"name":"Spatial Data & Analysis","size":50}
+			]
+		},
+		{
+			"name":"Design Thinking",
+			"children": [
+				{"name":"Haas@Work","size":50},
+				{"name":"User Interface Development","size":50},
+				{"name":"Information Organization and Retrieval","size":25},
+				{"name":"Behavioral Economics","size":35}
+			]
+		},
+		{
+			"name":"Experimental Design",
+			"children": [
+				{"name":"Quantitative Research Methods","size":100}
+			]
+		}
+	]
+}

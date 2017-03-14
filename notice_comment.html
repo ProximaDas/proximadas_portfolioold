@@ -1,0 +1,114 @@
+<div class="portfolio-content">
+    <!--Title and Subtitle-->
+    <div class="cbp-l-project-title">Analyzing Government Notice and Comment</div>
+    <div class="cbp-l-project-subtitle">Assessing large volumes of comments on government regulations</div>
+    <!--/Title and Subtitle-->
+    <!--Slider-->
+    <div class="cbp-slider">
+        <ul class="cbp-slider-wrap">
+            <li class="cbp-slider-item">
+                <a href="contents/images/notice1.png" class="cbp-lightbox">
+                    <img src="contents/images/notice1.png" alt=""> 
+                </a>
+            </li>
+            <li class="cbp-slider-item">
+                <a href="contents/images/notice2.png" class="cbp-lightbox">
+                    <img src="contents/images/notice2.png" alt=""> 
+                </a>
+            </li>
+            <li class="cbp-slider-item">
+                <a href="contents/images/notice3.png" class="cbp-lightbox">
+                    <img src="contents/images/notice3.png" alt=""> 
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--/Slider-->
+    <!--Container-->
+    <div class="cbp-l-project-container">
+        <!--Description-->
+        <div class="cbp-l-project-desc">
+            <div class="cbp-l-project-desc-title">
+                <span>The Problem</span>
+            </div>
+            <div class="cbp-l-project-desc-text">“When Congress passes laws, federal agencies implement those laws through regulations. These   regulations vary in subject and include everything from ensuring water is safe to drink to setting health care standards. Regulations.gov is the place where users can find and comment on regulations.” - <a target="_blank" href="https://www.regulations.gov">Regulation.gov</a>
+
+            Currently, all the comments are analyzed by government officials. While process works when the volume of comments is low, it fails when a particular regulation receives a large volume of comments. For example, the docket for the Consumer Financial Protection Bureau’s proposed rule on ‘Payday, Vehicle Title, and Certain High-Cost Installment Loans’ received 421,260 comments. Supposing an average of 1 minute is spent per comment, processing these comments would take approximately 878 8-hour work days. In this project, we aim to automatically summarize regulatory documents and cluster comments on those documents to aid policymakers in making better decisions based on the comments. We also hope this project will allow other interested parties to explore the documents and the comments being submitted.
+            </div>
+        </div>
+        <!--/Description-->
+        
+        <!--/Detail List-->
+        <div class="cbp-l-project-details">
+            <div class="cbp-l-project-details-title">
+                <span>Project Details</span>
+            </div>
+             <!-- List-->
+            <ul class="cbp-l-project-details-list">
+                <li><strong>Team Members</strong>Emily Witt, Jason Danker, Proxima DasMohapatra</li>
+                <li><strong>Date</strong>December 2016</li>
+                <li><strong>Categories</strong>Natural Language Processing, Machine Learning</li>
+            </ul>
+             <!--/List-->
+            <a href="https://nlp-notice-and-comment.herokuapp.com/index" target="_blank" class="cbp-l-project-details-visit btn red uppercase">visit the site</a>
+        </div>
+        <!--/Detail List-->
+
+        <!--Description-->
+        <div class="cbp-l-project-desc">
+            <div class="cbp-l-project-desc-title">
+                <span>The Solution</span>
+            </div>
+            <div class="cbp-l-project-desc-text">Our goal was to develop an algorithm that would aid human analysts at regulation.gov in the process of summarizing and clustering comments submitted by citizens during each regulation’s mandatory notice-and-comment period. The project aims to summarize government regulations and assess large volumes of comments on proposed these regulations. It utilizes natural language processing techniques like keyword extraction, key sentences extraction, clustering(unsupervised machine learning). </div>
+        </div>
+        <!--/Description-->
+
+        <!--Description-->
+        <div class="cbp-l-project-desc">
+            <div class="cbp-l-project-desc-title">
+                <span>Algorithms and details</span>
+            </div>
+            <div class="cbp-l-project-desc-text">
+                <dl>
+                    <dt><b>Document keyword extraction</b></dt>
+                    <dd>This algorithm extracts the keywords in a document. This helps the tool in giving users a high level idea of the topics that the document is talking about, and also acts as an input to other algorithms.</dd>
+                    <dt><b>Key sentences from document</b></dt>
+                    <dd>These are the sentences from the document that have the highest importance score, based on three criteria: highest number of our important keywords; longest length (indicating an abundance of information included); and presence of words indicating the sentence is related to the problem the regulation is attempting to solve.</dd>
+                    <dt><b>Cluster comments based on topic</b></dt>
+                    <dd>This algorithm clusters the comments on a document using k-means. The number of clusters is determined by the number of common parents for the top unigrams in the main document. The output for this algorithm is a collection of comment clusters based on the topic</dd>
+                    <dt><b>Pull out central comment cluster sentence</b></dt>
+                    <dd>As it is hard to determine the semantic meaning behind a cluster, we identified and selected the comment closest to the k-means centroid as a representative of that cluster.</dd>
+                    <dt><b>Differentiating cluster phrases</b></dt>
+                    <dd>Having clustered the comments, we merged all of the comments in each cluster into one ‘mega-comment’ and then used TF-IDF across these ‘mega-comments.’ </dd>
+                </dl>
+            </div>
+        </div>
+        <!--/Description-->
+
+    </div>
+    <!--/Container-->
+    <!--Container 2-->
+    <div class="cbp-l-project-container">
+        <div class="cbp-l-project-related">
+            <!--Title-->
+            <div class="cbp-l-project-desc-title">
+                <span>Related Projects</span>
+            </div>
+            <!--/Title-->
+            <!--Related List-->
+            <ul class="cbp-l-project-related-wrap">
+                <li class="cbp-l-project-related-item">
+                    <a href="#" class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
+                        <img src="contents/images/darkdata.png" alt="">
+                        <div class="cbp-l-project-related-title">Mining Dark Data</div>
+                    </a>
+                </li>
+            </ul>
+            <!--/Related List-->
+        </div>
+    </div>
+    <!--/Container 2-->
+    <br>
+    <br>
+    <br> 
+</div>
